@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Welcome to the AWS CodeStar sample web service
 ==============================================
 
@@ -111,3 +112,10 @@ should also regularly review and apply any available patches or associated secur
 advisories for dependencies used within your application.
 
 Best Practices: https://docs.aws.amazon.com/codestar/latest/userguide/best-practices.html?icmpid=docs_acs_rm_sec
+=======
+# FoodRE
+Food Recommendation Engine
+Updated the backend database APIs
+Updated MongoDB, whitelisting the IP
+Some cosmetic changes
+Added the direct ordering and viewing recipe in results
