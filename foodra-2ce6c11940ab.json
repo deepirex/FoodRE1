@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "foodra",
+  "private_key_id": "2ce6c11940abbcfa8b8c94933bca63e68c7c27f0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEugIBADANBgkqhkiG9w0BAQEFAASCBKQwggSgAgEAAoIBAQDb4leOfQCWPBIN\ntpItsOjAWeQ8ozNrh+ZkVjZIHz7EZXTqmAhq16G2xNtbThf/B0VaQIUVd593xAHE\nsWooCR7dmj0fi+T8Pb2UtIi5fC7qV8MxOghV2eC0b6MzmwnfFrO8/d7EEcHbHYO8\n1LkmwXZKxO35FNxr8CV2hcrHnonp8SkhFrSpNTwxcKNJcSwqZQUlrJ2uPaotxGgh\naGZ6413LwVfgY4at+AsWZAPDoQzmBPIW/8JoCr8aGvKasP5gorWuhfQSX5/tMSZb\nGzOblzHAYwampadSYawGYhR+ADt2KnLrIwFQYIRlGwWkaU7zTPfWElyoJc9bn3/V\nVGpp9gWXAgMBAAECgf8A5g1mtYSsnIh98sKnp0kGbNh5gbZmZvtN8w6EZ40ZwFMB\nVqByfdt0CP9hxqYZdIkCi5YQ4R3p0lw56m0e7qEtEwBs3TWJh5QMvV0UNQziiY8o\nFoWOlkbrtswQAHtfsH/pGkAhCY3Q2grFJrzThxcRZt6iizluF6gw2zzA/0372p5e\nFH9fMMXdpHlh3Ytvn936f2eBXylsPcSvnnfniuPYFrbrEiclTQM47BNA9Pc8yjwa\nqb8eBZzO8Y+AgOfGSx1v7pHkeqP7rzN2ixINQQQznkQCsXB/DzQdtAiRTwqFVF6F\nZStKD8MI00XxKfqB3qm3P92IXfXNghMq850aSF0CgYEA7boQCcOCtH1LRsz5EeER\nOKiZl60I5I0vWGP2Gx25S39gsDl60+SUSqgteZXpCbIekJjbVC6Am5/bpK7dUARB\nMfjAGoedfAy/DfxgY5LAlZnD6P98M8yx1qRfYfo2xSb7DkqZJckdmwyzikaK7LBU\nyWgYUzM1x2kNzR9UBkVl6JMCgYEA7Mks4yCxEZCwAtzcnjeo2TMJ1qJCkW8FFfCu\n6+9RGAx5W836b2EHS+YarqPU8j7eHevx+/mixAmff0FdRnVJWwiVehST3xV2JxgF\ndTKXkVnWjveYbG54NI/Svt/YZsQFI66V3ogQpac4FolmFrhzigYxgYjC7z52Oxjo\nzEXwZW0CgYBVneQ2z/4b6OAakKnHYaqlIDuo373LKnn5uI6jN3JLmYWGEj2FYNZz\niNxP5Mi4IDlX1GVxjQnugoVFa2Dzd4TPbYoqQ9tZGPIaJGHGmszXVDi1ioX91ePa\nrPpZPBdLq/1RKVa8wBD0jX9/9mYEVoFCxEW2eUQOHGzHClhlpcrNFwKBgCUOFog0\nxYEKM4E/LwdTjojvA8si+WfpB9K3J6ikevxYd2V2hoqHlKy8BdDuspR2YiwskGHu\nXxpupxczE3XDRQeKAFpqffmbUjIsAC6nDDEi7gDRnnjZkNYo68ITJbpvUp6S48E/\naduCn7RnLCLCGtKuxXCQBnGKRNZav5O4HjbBAoGAGA8tpvJJOlnrQmV+OcKWpLJl\nYxKgAUOQWxHwTNe3YyTZGueYvyaavWlHiwfGDZ4OfeiFzk9j7tJz6IYNYNWDf9uf\n9PnsLg/E3MNf7KEnyblaBVUV5O1vNjtOmE3fOHehZBziW+ueRrZ/2bVbVx6gLS+5\nx5fubpz6s7QakBx1Rco=\n-----END PRIVATE KEY-----\n",
+  "client_email": "foodra@foodra.iam.gserviceaccount.com",
+  "client_id": "116705810214426459256",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/foodra%40foodra.iam.gserviceaccount.com"
+}
