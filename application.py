@@ -3,10 +3,11 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import pymongo
 import certifi
+import boto3
+import json
 from bson import json_util, ObjectId
 from json import JSONEncoder
 from urllib.parse import quote
-
 
 
 class CustomJSONEncoder(JSONEncoder):
@@ -16,15 +17,21 @@ class CustomJSONEncoder(JSONEncoder):
        return super(CustomJSONEncoder, self).default(obj)
 
 
+def get_secret(secret_name):
+    region_name = "eu-north-1"  # Replace this with the region where you created the secret
+    client = boto3.client("secretsmanager", region_name=region_name)
+    response = client.get_secret_value(SecretId=secret_name)
+    return response["SecretString"]
+
+
 application = Flask(__name__)
 application.json_encoder = CustomJSONEncoder
-
 
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/spreadsheets",
         "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
 
-
-creds = ServiceAccountCredentials.from_json_keyfile_name("/Users/Deepak/Downloads/foodra-2ce6c11940ab.json", scope)
+key_file_content = get_secret("foodra_json_key")
+creds = ServiceAccountCredentials.from_json_keyfile_dict(json.loads(key_file_content), scope)
 client_gs = gspread.authorize(creds)
 
 
