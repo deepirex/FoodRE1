@@ -16,8 +16,8 @@ class CustomJSONEncoder(JSONEncoder):
        return super(CustomJSONEncoder, self).default(obj)
 
 
-app = Flask(__name__)
-app.json_encoder = CustomJSONEncoder
+application = Flask(__name__)
+application.json_encoder = CustomJSONEncoder
 
 
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/spreadsheets",
@@ -39,12 +39,12 @@ db = client['food_recommendation']
 recipes_collection = db['recipes']
 
 
-@app.route('/')
+@application.route('/')
 def index():
    return render_template('index.html')
 
 
-@app.route('/refresh_data', methods=['GET'])
+@application.route('/refresh_data', methods=['GET'])
 def refresh_data():
    sheet = client_gs.open_by_key("1-ALF3cj103Z6gOzyzmvNlVwj12hJ3w8Gxi3Bs3CzWQQ").sheet1
    recipes_collection.delete_many({})
@@ -54,7 +54,7 @@ def refresh_data():
 
 from pymongo import ASCENDING
 
-@app.route('/get_recommendations', methods=['POST'])
+@application.route('/get_recommendations', methods=['POST'])
 def get_recommendations():
     cuisine = request.form.getlist('cuisine')
     dietary_preference = request.form.get('dietary_preference')
@@ -134,4 +134,4 @@ def load_data_to_mongodb(sheet, recipes_collection):
 
 
 if __name__ == '__main__':
-   app.run(debug=True)
+   application.run(debug=True)
