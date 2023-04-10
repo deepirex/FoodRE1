@@ -16,7 +16,8 @@ def client():
         yield client
 
 def test_response(client):
-    result = client.get()
+    result = client.get('/')
     response_body = result.get_data()
     print(response_body)
     assert result.status_code == 200
+
