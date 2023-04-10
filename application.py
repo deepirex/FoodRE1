@@ -24,7 +24,7 @@ def get_secret(secret_name):
     return response["SecretString"]
 
 
-application = Flask(__name__)
+application = Flask(__name__, template_folder='templates')
 application.json_encoder = CustomJSONEncoder
 
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/spreadsheets",
